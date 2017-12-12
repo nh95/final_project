@@ -24,7 +24,7 @@
 <body>
 
 
-<form action="index.php?action=homepage" method="post">
+<form action="index.php?page=accounts&action=login" method="post">
     User name: <input type="text" name="fname"><br>
     Password: <input type="password" name="password"><br>
     <input type="submit" value="Login">
