@@ -7,12 +7,7 @@ if($data == false){
     print utility\htmlTable::genarateTableFromMultiArray($data);
 }
 ?>
-<html>
-<body>
-<form action="index.php?page=tasks&action=create" method="post" id="form1">
-    <button type="submit" form="form1" value="create">Create Task</button>
-    </form>
-</body>
-</html>
+<h1><a href="index.php?page=tasks&action=create">Create Task</a> </h1>
+
 
 
