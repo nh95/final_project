@@ -1,36 +1,17 @@
-/**
- * Created by PhpStorm.
- * User: navee
- * Date: 12/12/2017
- * Time: 1:51 PM
- */
-<!doctype html>
+<html>
+<body  >
+<div class="container">
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
+        <form class="form-signin" action="index.php?page=accounts&action=login" method="post">
+                <h2 class="form-signin-heading">Please sign in</h2>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="email" name = "email" id="email" class="form-control" placeholder="Email address" required autofocus>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" name ="password" id="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <h1><a href="index.php?page=accounts&action=register">New Here? Join Us Now</a></h1>
+        </form>
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
-
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-
-
-<form action="index.php?page=accounts&action=login" method="post">
-    User name: <input type="text" name="fname"><br>
-    Password: <input type="password" name="password"><br>
-    <input type="submit" value="Login">
-</form>
-
-
-<script src="js/scripts.js"></script>
+    </div>
 </body>
 </html>
