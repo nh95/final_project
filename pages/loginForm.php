@@ -1,17 +1,76 @@
-<html>
-<body  >
 <div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card  bg-light">
+                <div class="card-header">
+                    <h4> Login </h4>
+                </div>
 
-        <form class="form-signin" action="index.php?page=accounts&action=login" method="post">
-                <h2 class="form-signin-heading">Please sign in</h2>
-                <label for="inputEmail" class="sr-only">Email address</label>
-                <input type="email" name = "email" id="email" class="form-control" placeholder="Email address" required autofocus>
-                <label for="inputPassword" class="sr-only">Password</label>
-                <input type="password" name ="password" id="password" class="form-control" placeholder="Password" required>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-                <h1><a href="index.php?page=accounts&action=register">New Here? Join Us Now</a></h1>
-        </form>
+                <div class="card-body">
+                    <p>Enter username and password to Log In</p>
+                    <form role="form" action="index.php?page=accounts&action=login" method="POST" class="login-form">
+                        <div class="form-group">
+                            <label class="sr-only" for="form-username">Email</label>
+                            <input type="email" name="email" placeholder="email..." class="form-email form-control" id="form-email" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="form-password">Password</label>
+                            <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-info">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-sm-6">
+
+            <div class="card bg-light">
+                <div class="card-header">
+                    <div class="form-top-left">
+                        <h4>Get Started - It's Free</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form role="form" action="index.php?page=accounts&action=register" method="POST" class="registration-form">
+                        <div class="form-group">
+                            <label class="sr-only" for="form-first-name">First name</label>
+                            <input type="text" name="fname" placeholder="First name..." class="form-first-name form-control" id="form-first-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="form-last-name">Last name</label>
+                            <input type="text" name="lname" placeholder="Last name..." class="form-last-name form-control" id="form-last-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="form-email">Email</label>
+                            <input type="email" name="email" placeholder="Email..." class="form-email form-control" id="form-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="form-birthday">Birthday</label>
+                            <input type="date" name="birthday" placeholder="Birthday..." class="form-birthday form-control" id="form-birthday" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="form-phonenumber">Phone number</label>
+                            <input type="text" name="phone" placeholder="Phone number..." class="form-phonenumber form-control" id="form-phonenumber" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="form-email">Gender</label>
+                            Gender:
+                            <label>  <input type="radio" name="gender" value="male"  required> Male </label>
+                            <label>  <input type="radio" name="gender" value="female" > Female </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="form-email">Password</label>
+                            <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Join Now</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
     </div>
-</body>
-</html>
+
+</div>
+

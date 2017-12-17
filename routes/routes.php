@@ -98,13 +98,47 @@ class routes
         //YOU WILL NEED TO ADD MORE ROUTES
 
         $route = new route();
-        $route->http_method = 'POST';
+        $route->http_method = 'GET';
         $route->action = 'delete';
         $route->page = 'tasks';
         $route->controller = 'tasksController';
         $route->method = 'delete';
         $routes[] = $route;
 
+        $route = new route();
+        $route->http_method = 'POST';
+        $route->action = 'create';
+        $route->page = 'tasks';
+        $route->controller = 'tasksController';
+        $route->method = 'create';
+        $routes[] = $route;
+        //for edit form
+        $route = new route();
+        $route->http_method = 'GET';
+        $route->action = 'create';
+        $route->page = 'tasks';
+        $route->controller = 'tasksController';
+        $route->method = 'form';
+        $routes[] = $route;
+
+        //new edit save
+        $route = new route();
+        $route->http_method = 'POST';
+        $route->action = 'save';
+        $route->page = 'tasks';
+        $route->controller = 'tasksController';
+        $route->method = 'save';
+        $routes[] = $route;
+
+//logout
+        $route = new route();
+        $route->http_method = 'GET';
+        $route->action = 'logout';
+        $route->page = 'accounts';
+        $route->controller = 'accountsController';
+        $route->method = 'logout';
+        $routes[] = $route;
+//end
 
         $route = new route();
         $route->http_method = 'POST';
@@ -129,14 +163,7 @@ class routes
         $route->controller = 'accountsController';
         $route->method = 'save';
         $routes[] = $route;
-        //this is the route for the reg form
-        $route = new route();
-        $route->http_method = 'GET';
-        $route->action = 'register';
-        $route->page = 'accounts';
-        $route->controller = 'accountsController';
-        $route->method = 'register';
-        $routes[] = $route;
+
         //this handles the reg post to create the user
         $route = new route();
         $route->http_method = 'POST';
@@ -146,47 +173,13 @@ class routes
         $route->method = 'store';
         $routes[] = $route;
 
-	//added routes for create task
-	$route = new route();
-        $route->http_method = 'POST';
-	        $route->action = 'create';
-		        $route->page = 'tasks';
-			        $route->controller = 'tasksController';
-				        $route->method = 'store';
-					        $routes[] = $route;
         $route = new route();
-                $route->http_method = 'POST';
-                $route->action = 'create';
-                $route->page = 'tasks';
-                $route->controller = 'tasksController';
-                $route->method = 'create';
-                $routes[] = $route;
-        //for edit form
-                $route = new route();
-                $route->http_method = 'GET';
-                $route->action = 'create';
-                $route->page = 'tasks';
-                $route->controller = 'tasksController';
-                $route->method = 'form';
-                $routes[] = $route;
-                //new edit save
-                $route = new route();
-                $route->http_method = 'POST';
-                $route->action = 'save';
-                $route->page = 'tasks';
-                $route->controller = 'tasksController';
-                $route->method = 'save';
-                $routes[] = $route;
-
-        //logout
-                $route = new route();
-                $route->http_method = 'GET';
-                $route->action = 'logout';
-                $route->page = 'accounts';
-                $route->controller = 'accountsController';
-                $route->method = 'logout';
-                $routes[] = $route;
-						
+        $route->http_method = 'GET';
+        $route->action = 'update';
+        $route->page = 'accounts';
+        $route->controller = 'accountsController';
+        $route->method = 'show';
+        $routes[] = $route;
 
         return $routes;
     }
@@ -210,3 +203,4 @@ class route
     public $method;
     public $controller;
 }
+

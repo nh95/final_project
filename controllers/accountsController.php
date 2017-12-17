@@ -15,8 +15,8 @@ class accountsController extends http\controller
     //to call the show function the url is index.php?page=task&action=show
     public static function show()
     {
-         session_start();
-         $record = accounts::findOne(($_SESSION["userID"]));
+        session_start();
+        $record = accounts::findOne(($_SESSION["userID"]));
         self::getTemplate('show_account', $record);
     }
 
@@ -41,6 +41,7 @@ class accountsController extends http\controller
         //USE THE ABOVE TO SEE HOW TO USE Bcrypt
         self::getTemplate('register');
     }
+
 
     //this is the function to save the user the new user for registration
     public static function store()
@@ -72,7 +73,7 @@ class accountsController extends http\controller
         } else {
             //You can make a template for errors called error.php
             // and load the template here with the error you want to show.
-           // echo 'already registered';
+            // echo 'already registered';
             $error = 'already registered';
             self::getTemplate('error', $error);
 
@@ -90,7 +91,6 @@ class accountsController extends http\controller
 //this is used to save the update form data
     public static function save() {
         $user = accounts::findOne($_REQUEST['id']);
-
         $user->email = $_POST['email'];
         $user->fname = $_POST['fname'];
         $user->lname = $_POST['lname'];
@@ -122,12 +122,12 @@ class accountsController extends http\controller
 
         $user = accounts::findUserbyEmail($_REQUEST['email']);
 
-
         if ($user == FALSE) {
             echo 'user not found';
         } else {
-
+            // var_dump($user->checkPassword($_POST['password']));
             if($user->checkPassword($_POST['password']) == TRUE) {
+
 
                 echo 'login';
 
@@ -135,6 +135,7 @@ class accountsController extends http\controller
                 $_SESSION["userID"] = $user->id;
 
                 //forward the user to the show all todos page
+                // print_r($_SESSION);
                 header("Location: index.php?page=tasks&action=all");
             } else {
                 echo 'password does not match';
@@ -154,5 +155,4 @@ class accountsController extends http\controller
     }
 
 }
-
 

@@ -1,6 +1,9 @@
+</div>
 <footer class="footer">
     <div class="container">
         <p> ©Tick The Task,Inc.[US] | contact Us:(862)300-9433 | email:tick@t3.com </p>
+        <a href="https://njit-connect.njit.edu/foundation-contact-us" target="_blank">Contact us</a> |
+        <a href="http://www.njit.edu/about/visit/gettingtonjit.php" rel="nofollow">Maps and Directions</a>
     </div>
 
 </footer>
@@ -10,3 +13,5 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="../../dist/js/bootstrap.min.js"></script>
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
