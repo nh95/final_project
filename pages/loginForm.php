@@ -3,7 +3,7 @@
         <div class="col-sm-6">
             <div class="card  bg-light">
                 <div class="card-header">
-                    <h4> Login </h4>
+                    <h4> Existing User ? </h4>
                 </div>
 
                 <div class="card-body">
@@ -11,13 +11,13 @@
                     <form role="form" action="index.php?page=accounts&action=login" method="POST" class="login-form">
                         <div class="form-group">
                             <label class="sr-only" for="form-username">Email</label>
-                            <input type="email" name="email" placeholder="email..." class="form-email form-control" id="form-email" required autofocus>
+                            <input type="email" name="email" placeholder="email..." class="form-email form-control" id="form-email" required >
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="form-password">Password</label>
                             <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password" required>
                         </div>
-                        <button type="submit" class="btn btn-info">Sign in</button>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
                     </form>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                             <input type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password" required>
                         </div>
 
-                        <button type="submit" class="btn btn-success">Join Now</button>
+                        <button type="submit" class="btn btn-primary">Join Now</button>
                     </form>
                 </div>
             </div>

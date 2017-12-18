@@ -1,7 +1,7 @@
 </div>
 <footer class="footer">
-    <div class="container">
-        ©Tick The Task,Inc.[US] | contact Us:(862)300-9433 | email:tick@t3.com
+    <div class="container" style="align-content: center">
+                <center>  ©Tick The Task,Inc.[US] | contact Us:(862)300-9433 | email:tick@t3.com</center>
     </div>
 
 </footer>
