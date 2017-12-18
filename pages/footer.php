@@ -1,9 +1,7 @@
 </div>
 <footer class="footer">
     <div class="container">
-        <p> ©Tick The Task,Inc.[US] | contact Us:(862)300-9433 | email:tick@t3.com </p>
-        <a href="https://njit-connect.njit.edu/foundation-contact-us" target="_blank">Contact us</a> |
-        <a href="http://www.njit.edu/about/visit/gettingtonjit.php" rel="nofollow">Maps and Directions</a>
+        ©Tick The Task,Inc.[US] | contact Us:(862)300-9433 | email:tick@t3.com
     </div>
 
 </footer>
